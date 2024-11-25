@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e2e; /* Dark Gray */
+    color: #f4f4f4; /* Light Gray Text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #e4d2ba; /* Light Brown */
+    color: #2e2e2e; /* Dark Text */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header p {
+    font-size: 0.9em;
+    margin: 5px 0 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #3e3e3e; /* Darker Gray */
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    color: #f4f4f4; /* Light Text */
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e4d2ba; /* Light Brown Hover */
+    color: #2e2e2e; /* Dark Text Hover */
+    border-radius: 5px;
+}
+
+/* Hero Section */
+section#home {
+    background-image: url('images/maldives.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+section#home h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+section#home p {
+    font-size: 1em;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #3a3a3a; /* Slightly lighter Gray */
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Section */
+form {
+    background-color: #e4d2ba; /* Light Brown */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2e2e2e; /* Dark Gray */
+    color: #e4d2ba; /* Light Brown */
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #e4d2ba;
+    color: #2e2e2e;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #2e2e2e; /* Dark Gray */
+    color: #f4f4f4; /* Light Text */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    section#home h2 {
+        font-size: 1.5em;
+    }
+
+    section#home p {
+        font-size: 0.9em;
+    }
+
+    .gallery img {
+        max-width: 45%;
+    }
+
+    form {
+        padding: 10px;
+    }
+}
